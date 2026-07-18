@@ -228,29 +228,33 @@
 
             <!-- Two-column: TrackMan card + lesson promo images -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 4rem;">
-                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                    <h3 style="font-family: var(--font-heading); color: var(--text-cream); margin-bottom: 0.5rem;">TrackMan 4 Dual Radar</h3>
-                    <p style="font-size: 0.85rem; color: var(--secondary-amber); font-family: var(--font-heading); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.25rem;">The #1 Launch Monitor on the PGA Tour</p>
-                    <p style="font-size: 0.95rem; margin-bottom: 2rem;">Unlock precision ball-flight data and club delivery metrics. Available now at SVGC for private instruction and club fitting sessions.</p>
-                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                        <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Club Speed</span>
-                        <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Ball Speed</span>
-                        <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Launch Angle</span>
-                        <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Spin Rate</span>
-                        <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Carry Distance</span>
+                <!-- Left: TrackMan card + Lesson Pricing image -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        <h3 style="font-family: var(--font-heading); color: var(--text-cream); margin-bottom: 0.5rem;">TrackMan 4 Dual Radar</h3>
+                        <p style="font-size: 0.85rem; color: var(--secondary-amber); font-family: var(--font-heading); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.25rem;">The #1 Launch Monitor on the PGA Tour</p>
+                        <p style="font-size: 0.95rem; margin-bottom: 2rem;">Unlock precision ball-flight data and club delivery metrics. Available now at SVGC for private instruction and club fitting sessions.</p>
+                        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                            <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Club Speed</span>
+                            <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Ball Speed</span>
+                            <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Launch Angle</span>
+                            <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Spin Rate</span>
+                            <span style="font-size: 0.8rem; background: rgba(197,160,89,0.1); border: 1px solid var(--border-color); padding: 0.35rem 0.75rem; border-radius: 4px; color: var(--brass-gold);">Carry Distance</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="pro-shop.html" class="btn btn-primary">Book a Lesson</a>
+                            <a href="pro-shop.html#fittings" class="btn btn-secondary">Fitting Events</a>
+                        </div>
                     </div>
-                    <div class="btn-group">
-                        <a href="pro-shop.html" class="btn btn-primary">Book a Lesson</a>
-                        <a href="pro-shop.html#fittings" class="btn btn-secondary">Fitting Events</a>
-                    </div>
+                    <!-- Lesson Pricing image moved here -->
+                    <img src="assets/lesson-pricing-packages.png" alt="Lesson Pricing Packages" style="width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--border-color);">
                 </div>
 
-                <!-- Lesson / clinic promo images grid -->
+                <!-- Right: clinic promo images -->
                 <div style="display: grid; grid-template-columns: 1fr; gap: 1.25rem;">
                     <img src="assets/pga-lead-group-instruction.png" alt="Group Golf Instruction at SVGC" style="width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--border-color);">
                     <img src="assets/junior-golf-clinic.png" alt="Junior Golf Clinic at SVGC" style="width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--border-color);">
                     <img src="assets/beginners-golf-clinic.png" alt="Beginners Golf Clinic" style="width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--border-color);">
-                    <img src="assets/lesson-pricing-packages.png" alt="Lesson Pricing Packages" style="width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--border-color);">
                 </div>
             </div>
 
