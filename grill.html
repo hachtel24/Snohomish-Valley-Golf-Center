@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the Valley Grill digital menu. Serving delicious scratch-cooked breakfast, lunch, and dinner daily in Snohomish, WA. Enjoy craft cocktails, burgers, and breakfast burritos at your hitting stall.">
+    <title>Valley Grill Menu & Hours | Snohomish Valley Golf Center</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Food Establishment Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "Valley Grill at Snohomish Valley Golf Center",
+      "image": "assets/hero_sunset_range.jpg",
+      "telephone": "(360) 568-2493",
+      "url": "https://snohomishvalleygolfcenter.com/grill.html",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8511 Marsh Road",
+        "addressLocality": "Snohomish",
+        "addressRegion": "WA",
+        "postalCode": "98296",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "21:00"
+      },
+      "servesCuisine": [
+        "American",
+        "Breakfast",
+        "Cocktails"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="toptracer.html">Range</a></li>
+                <li><a href="mini-golf.html">Mini Golf</a></li>
+                <li class="active"><a href="grill.html">Grill</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="pro-shop.html">Instruction</a></li>
+                <li><a href="gift-cards.html">Gift Cards</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: linear-gradient(rgba(7, 13, 10, 0.6), rgba(7, 13, 10, 0.9)), url('assets/valley grill hero.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">Scratch Kitchen & Bar</span>
+                <h1>Valley Grill</h1>
+                <p class="hero-desc">Homestyle, from-scratch cooking using fresh local ingredients. Order takeout, dine in our cozy indoor bar, or have delicious bites delivered directly to your Toptracer range stall.</p>
+                <div class="btn-group">
+                    <a href="#menu" class="btn btn-primary">View the Menu</a>
+                    <a href="toptracer.html" class="btn btn-secondary">Hit a Bucket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOURS & INFO -->
+    <section class="section section-dark">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; text-align: center;">
+                <div style="background: rgba(7, 13, 10, 0.5); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem;">
+                    <h3 style="color: var(--brass-gold); font-family: var(--font-heading); font-size: 1.15rem;">Grill Hours</h3>
+                    <p style="font-size: 1.25rem; color: var(--text-cream); font-weight: bold; margin: 0.5rem 0 0 0;">Open Daily: 8:00 AM–9:00 PM</p>
+                </div>
+                <div style="background: rgba(7, 13, 10, 0.5); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem;">
+                    <h3 style="color: var(--brass-gold); font-family: var(--font-heading); font-size: 1.15rem;">Daily Breakfast</h3>
+                    <p style="font-size: 1.25rem; color: var(--text-cream); font-weight: bold; margin: 0.5rem 0 0 0;">Served: 8:00 AM–11:00 AM</p>
+                </div>
+                <div style="background: rgba(7, 13, 10, 0.5); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem;">
+                    <h3 style="color: var(--brass-gold); font-family: var(--font-heading); font-size: 1.15rem;">Dine Anywhere</h3>
+                    <p style="font-size: 1.05rem; color: var(--text-muted); margin: 0.5rem 0 0 0;">Available for takeout, bar seating, or delivered to your stall.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIGITAL MENU -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>The Menu</h2>
+                <p>Made fresh to order. Quality ingredients, crafted from-scratch in the valley.</p>
+            </div>
+
+            <!-- Menu Tab Navigation -->
+            <div class="tabs-nav" style="margin-bottom: 4rem;">
+                <button class="tab-btn active" data-tab="breakfast">Daily Breakfast (8:00–11:00 AM)</button>
+                <button class="tab-btn" data-tab="lunch-dinner">Lunch & Dinner (11:00 AM–9:00 PM)</button>
+            </div>
+
+            <!-- Menu Tab Contents -->
+            <div class="tabs-container">
+                
+                <!-- Tab 1: Breakfast -->
+                <div class="tab-content active" id="breakfast">
+                    <div class="flyer-card">
+                        <img src="assets/breakfast-menu.png" alt="Valley Grill Breakfast Menu Flyer" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Breakfast Menu</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Breakfast Offerings</h3>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Breakfast Sandwich <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Two eggs, sausage, bacon, cheddar cheese, and house aioli on a toasted brioche bun. Served with hash browns.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Breakfast Burrito <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Bacon or chorizo, eggs, cheddar, hash browns, and fresh salsa wrapped in a flour tortilla. Add jalapeños (+$2.00) or chipotle aioli (+$0.50).</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Crispy French Toast <span style="float: right; color: var(--primary-sunset);">$10.00</span></h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Golden griddled French toast served with sweet raspberry sauce, butter, and maple syrup.</p>
+                            </div>
+                        </div>
+
+                        <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Breakfast Sides</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem;">
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Bacon (2pc) <span style="float: right; color: var(--primary-sunset);">$3.00</span></h5>
+                            </div>
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Crispy Hash Browns (5pc) <span style="float: right; color: var(--primary-sunset);">$5.00</span></h5>
+                            </div>
+                        </div>
+
+                        <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Drink Specials</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Bloody Mary <span style="float: right; color: var(--primary-sunset);">$10.00</span></h5>
+                            </div>
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Mimosa <span style="float: right; color: var(--primary-sunset);">$8.00</span></h5>
+                            </div>
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Screwdriver <span style="float: right; color: var(--primary-sunset);">$8.00</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Lunch & Dinner -->
+                <div class="tab-content" id="lunch-dinner">
+                    <div class="flyer-card">
+                        <img src="assets/restaurant-menu-full-pricing.png" alt="Valley Grill Lunch & Dinner Menu Flyer" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Lunch & Dinner Menu</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Starters & Specialties</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; margin-bottom: 4rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">House Cut Fries <span style="float: right; color: var(--primary-sunset);">$9.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Crispy, fresh hand-cut valley potatoes.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Onion Rings <span style="float: right; color: var(--primary-sunset);">$12.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Thick-cut beer battered onion rings.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Loaded Valley Fries <span style="float: right; color: var(--primary-sunset);">$16.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Topped with melted cheese, bacon, and scallions.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Charcuterie Board <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Selected local cured meats and sharp cheeses.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Smoked Rib Tips <span style="float: right; color: var(--primary-sunset);">$12.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Tender house hickory-smoked rib tips.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Chicken Wings (6) <span style="float: right; color: var(--primary-sunset);">$12.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Tossed in spicy buffalo or sweet BBQ sauce.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Chicken Taquitos <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Crispy hand-rolled chicken taquitos.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">4pc Chicken Strips <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Hand-breaded strips served with cut fries.</p>
+                            </div>
+                            <div style="grid-column: span 2;">
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Kobe Beef Chili <span style="float: right; color: var(--primary-sunset);">$8.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Hearty slow-simmered premium beef chili.</p>
+                            </div>
+                        </div>
+
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">House Favorites</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; margin-bottom: 4rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Valley Cheeseburger <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Thick angus beef, cheddar, lettuce, tomato, house spread.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">The Beast Burger <span style="float: right; color: var(--primary-sunset);">$19.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Double beef patty, bacon, cheddar, lettuce, special sauce.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">BBQ Burger <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Angus beef, crispy bacon, onion ring, smoky BBQ sauce.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Valley Brisket Dog <span style="float: right; color: var(--primary-sunset);">$12.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Quarter-pound beef frank topped with house smoked brisket.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Blackberry Bacon Grilled Cheese <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Blackberry jam, crispy bacon, melted swiss, artisan bread.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">BL Double Tee <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Double decker bacon, crisp lettuce, tomato club sandwich.</p>
+                            </div>
+                            <div style="grid-column: span 2;">
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Southwest Quesadilla <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Flour tortilla, grilled chicken, black beans, corn, cheese.</p>
+                            </div>
+                        </div>
+
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Sandwiches & Wraps</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; margin-bottom: 4rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Basil Pesto Crispy Chicken <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Basil pesto, breaded chicken breast, melted provolone.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Buffalo Crispy Chicken <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Fried chicken breast tossed in spicy buffalo sauce, lettuce.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">HM Grilled Chicken <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Honey mustard glazed grilled chicken, lettuce, tomato.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Golf Club Cod Sandwich <span style="float: right; color: var(--primary-sunset);">$19.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Layered cod, lettuce, cheddar, house spread.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Crispy Chicken Wrap <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Breaded chicken, lettuce, cheese, ranch wrapper.</p>
+                            </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Spicy Chicken Caesar Wrap <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Romaine, grilled chicken, spicy caesar sauce, parmesan.</p>
+                            </div>
+                            <div style="grid-column: span 2;">
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Southwest Chicken Wrap <span style="float: right; color: var(--primary-sunset);">$18.50</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Chipotle chicken, corn, black beans, lettuce wrapper.</p>
+                            </div>
+                        </div>
+
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Fish & Chips</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+                            <div style="grid-column: span 2;">
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Alaskan Cod Fish & Chips</h4>
+                                <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: var(--text-muted);">Beer-battered Alaskan cod served with house-cut fries, tartar sauce, and lemon.</p>
+                                <div style="display: flex; gap: 2rem;">
+                                    <span style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--primary-sunset); font-weight: bold;">2pc — $17.00</span>
+                                    <span style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--primary-sunset); font-weight: bold;">3pc — $20.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Greens, Kids & Desserts</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1rem; text-transform: uppercase;">Salads</h4>
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; padding: 0;">
+                                    <li>
+                                        <strong style="color: var(--text-cream);">Valley Caesar</strong> <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">sm $8 / lg $12</span>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Crisp romaine, parmesan cheese, croutons.</p>
+                                    </li>
+                                    <li>
+                                        <strong style="color: var(--text-cream);">Bacon & Garlic Parmesan</strong> <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$14.00</span>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Mixed greens, bacon, garlic croutons, garlic parm dressing.</p>
+                                    </li>
+                                    <li>
+                                        <strong style="color: var(--text-cream);">House Salad</strong> <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">sm $8 / lg $12</span>
+                                        <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.25rem 0 0 0;">Mixed greens, cherry tomatoes, cucumbers, dressing choice.</p>
+                                    </li>
+                                </ul>
+                                <p style="font-size: 0.8rem; font-style: italic; color: var(--text-muted); margin-top: 1rem;">* Add Grilled Chicken (+$5.00) or Salmon (+$7.00).</p>
+                            </div>
+
+                            <div>
+                                <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1rem; text-transform: uppercase;">Kids Menu (12 & Under)</h4>
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; padding: 0; margin-bottom: 2rem;">
+                                    <li style="font-size: 0.85rem; color: var(--text-muted);"><strong style="color: var(--text-cream);">Cheeseburger <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$12.00</span></strong></li>
+                                    <li style="font-size: 0.85rem; color: var(--text-muted);"><strong style="color: var(--text-cream);">Mini Corn Dogs <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$10.00</span></strong></li>
+                                    <li style="font-size: 0.85rem; color: var(--text-muted);"><strong style="color: var(--text-cream);">Mac & Cheese <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$10.00</span></strong></li>
+                                </ul>
+
+                                <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1rem; text-transform: uppercase;">Desserts</h4>
+                                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; padding: 0;">
+                                    <li style="font-size: 0.85rem; color: var(--text-muted);"><strong style="color: var(--text-cream);">Cinnamon Churros <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$6.00</span></strong></li>
+                                    <li style="font-size: 0.85rem; color: var(--text-muted);"><strong style="color: var(--text-cream);">Whole Fruit Stuffed Sorbet <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$10.00</span></strong></li>
+                                    <li style="font-size: 0.85rem; color: var(--text-muted);"><strong style="color: var(--text-cream);">Gelato Bomba <span style="float: right; color: var(--primary-sunset); font-size: 0.9rem;">$10.00</span></strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Beverages / Cocktails Section -->
+            <div style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3 style="text-align: center; font-size: 1.6rem; color: var(--secondary-amber); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 2.5rem; text-transform: uppercase; letter-spacing: 0.15em;">Sunset Sips (Cocktails & Drinks)</h3>
+                
+                <div style="display: grid; gap: 2rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; border-bottom: 1px dashed rgba(197,160,89,0.2); padding-bottom: 1.5rem;">
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-cream); margin-bottom: 0.25rem;">SVGC Bloody Mary</h4>
+                            <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">House-made spicy tomato mix, premium vodka, pickled green beans, garlic olive, lemon wedge, and a crispy strip of bacon.</p>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--primary-sunset); font-weight: bold;">$12.00</span>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; border-bottom: 1px dashed rgba(197,160,89,0.2); padding-bottom: 1.5rem;">
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-cream); margin-bottom: 0.25rem;">Sunset Mimosa</h4>
+                            <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">Chilled champagne with fresh-squeezed orange juice and a light drizzle of sweet grenadine for a beautiful sunset gradient look.</p>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--primary-sunset); font-weight: bold;">$10.00</span>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; border-bottom: 1px dashed rgba(197,160,89,0.2); padding-bottom: 1.5rem;">
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-cream); margin-bottom: 0.25rem;">Screwdriver</h4>
+                            <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">A classic cocktail. Two shots of premium grain vodka topped off with sweet, cold fresh orange juice over ice.</p>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--primary-sunset); font-weight: bold;">$9.00</span>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; border-bottom: 1px dashed rgba(197,160,89,0.2); padding-bottom: 1.5rem;">
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-cream); margin-bottom: 0.25rem;">Snohomish Valley Craft Beer</h4>
+                            <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">Rotating taps from independent Washington craft breweries. IPA, Amber Ale, Stout, and Seasonal Cider. Ask your server for today's list.</p>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--primary-sunset); font-weight: bold;">$7.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LESSON CALLOUT -->
+    <section class="section section-dark">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; max-width: 900px; margin: 0 auto;">
+                <div>
+                    <h2>PGA Class-A Lessons</h2>
+                    <h3 style="color: var(--secondary-amber);">Patrick Ackerman, PGA</h3>
+                    <p>Schedule a professional session to check your swing posture, ball flight, and alignment on the driving range. Instruction and PGA Pro Shop services are available on weekdays and weekends by appointment.</p>
+                    <a href="pro-shop.html" class="btn btn-primary">Book Lessons Today</a>
+                </div>
+                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem;">
+                    <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--brass-gold); margin-bottom: 0.75rem;">Lesson Availability</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-cream);"><strong>Weekdays:</strong> 10:00 AM–7:00 PM</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text-cream);"><strong>Weekends:</strong> 9:00 AM–4:00 PM</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;">* Other times available by appointment. Contact Patrick for specific schedules.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT PUTT ANIMATED SEPARATOR -->
+    <div class="putt-track-container">
+        <div class="putt-track">
+            <div class="putt-ball"></div>
+            <div class="putt-hole"></div>
+            <div class="putt-flag"></div>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img" style="height: 40px;">
+                    </a>
+                    <p>Family owned and operated, nestled in the Snohomish Valley. Providing high-end golf practice, championship mini golf, and scratch cooking since 2001.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="toptracer.html">Range Pricing</a></li>
+                        <li><a href="mini-golf.html">Mini Golf</a></li>
+                        <li><a href="grill.html">Valley Grill</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Reservations & Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="rentals.html">Party Rentals</a></li>
+                        <li><a href="pro-shop.html">PGA Instruction</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                        <li><a href="about.html">Our Family</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours & Info</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Golf Range:</strong> (360) 568-2493</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Instruction:</strong> (425) 327-7495</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Email:</strong> info@svgc.com</p>
+                    <p style="font-size: 0.9rem;"><strong>Open Every Day:</strong><br>8:00 AM–10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Snohomish Valley Golf Center. All rights reserved.</p>
+                <p>8511 Marsh Road, Snohomish, WA 98296</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

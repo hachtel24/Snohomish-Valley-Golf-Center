@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Host your next event at Snohomish Valley Golf Center. Rent a Premium Stall, Covered Patio, Fire Table Patio with sunset views, or our 7,200 sq ft Large Tent. View packages, pricing, and fill out our inquiry form.">
+    <title>Party Rentals & Event Spaces | Snohomish Valley Golf Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="toptracer.html">Range</a></li>
+                <li><a href="mini-golf.html">Mini Golf</a></li>
+                <li><a href="grill.html">Grill</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li class="active"><a href="rentals.html">Rentals</a></li>
+                <li><a href="pro-shop.html">Instruction</a></li>
+                <li><a href="gift-cards.html">Gift Cards</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: linear-gradient(rgba(7, 13, 10, 0.5), rgba(7, 13, 10, 0.9)), url('assets/hero_sunset_range.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">Unforgettable Gatherings</span>
+                <h1>We’ll Host Your Next Event</h1>
+                <p class="hero-desc">Whether it’s a birthday, company outing, or bachelor party, Snohomish Valley Golf Center provides the perfect mix of high-tech entertainment, cozy sunset fire tables, and delicious hospitality.</p>
+                <div class="btn-group">
+                    <a href="#packages" class="btn btn-primary">Rental Packages</a>
+                    <a href="#inquiry" class="btn btn-secondary">Request Booking Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT TYPES TEASER -->
+    <section class="section section-dark">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 4rem auto;">
+                <h2>Perfect For Any Occasion</h2>
+                <p>From casual target practices to massive catering milestones, we customize setups for groups of all sizes.</p>
+            </div>
+            
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; max-width: 800px; margin: 0 auto;">
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Birthdays</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Graduations</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Company Events</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Bachelor & Bachelorette Parties</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Rehearsal Dinners</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Team Parties</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Gender Reveals</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Team Building</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--text-cream);">Fundraisers</span>
+                <span style="font-size: 0.9rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; color: var(--secondary-amber); font-weight: bold;">"Just need an excuse to party"</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES TABS SECTION -->
+    <section class="section" id="packages">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                <h2>Choose Your Space</h2>
+                <p>Click on the packages below to view details, pricing, and inclusions.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="stall">Premium Stall</button>
+                <button class="tab-btn" data-tab="covered">Covered Patio</button>
+                <button class="tab-btn" data-tab="fire">Fire Table Patio</button>
+                <button class="tab-btn" data-tab="tent">Large Tent</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tabs-container">
+                
+                <!-- Tab 1: Premium Stall -->
+                <div class="tab-content active" id="stall">
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1rem;">Premium Stall Rental</h3>
+                            <p>Our 2 Hour Premium Stall Rental is a great option if you and a group of friends are looking to come to the range to celebrate a special event or just a fun night out. If you want to ensure that one of our best stalls right in front of the main building will be available for you and your group, you can now rent a stall for 2 hours and just show up and enjoy the night. We have comfortable patio furniture for you to relax in while your group has a great night out!</p>
+                            <ul style="list-style: none; margin-bottom: 2rem;">
+                                <li style="margin-bottom: 0.5rem; color: var(--text-cream);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Full access to all of Toptracer's games and virtual golf courses.</li>
+                                <li style="margin-bottom: 0.5rem; color: var(--text-cream);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> We allow up to 8 people per party.</li>
+                                <li style="margin-bottom: 0.5rem; color: var(--text-cream);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Receive unlimited range balls for that specific stall during your 2-hour rental.</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; font-style: italic; color: var(--text-muted);">* If you have a larger group and want to reserve multiple stalls so you and your group can all be at the stalls at once, we are happy to accommodate.</p>
+                        </div>
+                        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                            <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Hourly Rental Cost</span>
+                            <div style="font-family: var(--font-heading); font-size: 3rem; color: var(--secondary-amber); font-weight: bold; margin: 1rem 0;">$100<span style="font-size: 1.25rem; font-weight: normal; color: var(--text-muted);"> / Hour</span></div>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); font-weight: 500;">Minimum 2-Hour Booking</p>
+                            <a href="#inquiry" class="btn btn-primary" style="margin-top: 1.5rem; font-size: 0.75rem;">Click Here to Reserve!</a>
+                        </div>
+                    </div>
+                    <div class="flyer-card">
+                        <img src="assets/premium-stall-rental.png" alt="SVGC Premium Stall Rental Lounge Chairs" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Premium Lounge Stalls</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Covered Patio -->
+                <div class="tab-content" id="covered">
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1rem;">Covered Patio Rental</h3>
+                            <p>The covered patio is 20’ x 20’ with an additional 400 square feet that is outside. The covered area will keep you shaded on a sunny day and dry in the rain. It is a more casual space than our Fire Table Patio with the added benefit of the cover.</p>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); margin-top: 1rem;"><strong>Party Rental Includes:</strong></p>
+                            <ul style="list-style: none; margin-bottom: 1.5rem; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Private Reservation for 1 hour of full access to the Covered Patio.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Eight 8ft long picnic tables.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Additional 6 foot tables for food and/or presents.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Access to the fully catered menu for groups of at least 30 people.</li>
+                            </ul>
+                            <p style="font-size: 0.85rem; font-style: italic; color: var(--text-muted);">* The rental is for the patio space only. All other activities (mini golf, range buckets, etc.), food, and beverages are in addition to the patio rental. No outside food is allowed at the facility.</p>
+                        </div>
+                        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                            <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Rental Rates</span>
+                            <div style="font-family: var(--font-heading); font-size: 3rem; color: var(--secondary-amber); font-weight: bold; margin: 0.5rem 0;">$125.00</div>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">For the First Hour</p>
+                            <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--brass-gold); font-weight: bold; margin-bottom: 0.5rem;">+$75.00</div>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Each Additional Hour</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Full Payment of rental space is required to hold your spot.</p>
+                            <a href="#inquiry" class="btn btn-primary" style="margin-top: 1.5rem; font-size: 0.75rem;">Book Covered Patio</a>
+                        </div>
+                    </div>
+                    <div class="flyer-card">
+                        <img src="assets/picnic-pavilion.jpg" alt="Covered Patio Picnic Pavilion Layout" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Covered Picnic Pavilion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Fire Table Patio -->
+                <div class="tab-content" id="fire">
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1rem;">Fire Table Patio Package</h3>
+                            <p>The Fire Table Patio is a more decorative patio with a beautiful concrete Wood Plank floor and two 8 foot long fire tables in the middle. These fire tables will add warmth and atmosphere to your party. With the best sunset views on the property, your guests are sure to leave happy. Restaurant style patio table and chair seating for up to 50.</p>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); margin-top: 1rem;"><strong>Patio Rental Includes:</strong></p>
+                            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Private Reservation for 1 hour of full access to the Fire Table Patio.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Two 8ft long fire tables w/ seating for 8 people or more.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Access to the fully catered menu for groups of at least 30 people.</li>
+                            </ul>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); margin-top: 0.5rem;"><strong>Additional Options:</strong></p>
+                            <ul style="list-style: none; margin-bottom: 1.5rem; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--brass-gold); margin-right: 0.5rem;">&#9656;</span> Each additional hour on the patio: $100.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--brass-gold); margin-right: 0.5rem;">&#9656;</span> Catered Meals for groups of 30 or more.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--brass-gold); margin-right: 0.5rem;">&#9656;</span> Non-Alcoholic Beverages on ice at the patio.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--brass-gold); margin-right: 0.5rem;">&#9656;</span> Private Bartender available (minimum purchase necessary).</li>
+                            </ul>
+                            <p style="font-size: 0.85rem; font-style: italic; color: var(--text-muted);">* The rental is for the patio space only. All other activities (mini golf, range buckets, etc.), food, and beverages are in addition to the patio rental. No outside food is allowed at the facility.</p>
+                        </div>
+                        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                            <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Rental Rates</span>
+                            <div style="font-family: var(--font-heading); font-size: 3rem; color: var(--secondary-amber); font-weight: bold; margin: 0.5rem 0;">$150.00</div>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">For the First Hour</p>
+                            <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--brass-gold); font-weight: bold; margin-bottom: 0.5rem;">+$100.00</div>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);">Each Additional Hour</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Full payment of patio rental is required to hold your spot.</p>
+                            <a href="#inquiry" class="btn btn-primary" style="margin-top: 1.5rem; font-size: 0.75rem;">Book Fire Table Patio</a>
+                        </div>
+                    </div>
+                    <div class="flyer-card">
+                        <img src="assets/firepit-patio-sunset.jpg" alt="Fire Pit Patio and Sunset Lounge Setup" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Fire Pit Patio Sunset</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Large Tent -->
+                <div class="tab-content" id="tent">
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div>
+                            <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1rem;">Large Covered Tent Rental</h3>
+                            <p>Our expansive 7,200 square foot tented patio offers a beautiful, covered outdoor setting that’s ideal for hosting larger gatherings and special occasions. Designed to comfortably accommodate big groups, this versatile space is perfect for everything from birthday parties and corporate events to family celebrations and social get togethers. With plenty of room to spread out, mingle, and enjoy the atmosphere, it’s especially well-suited for parties of 50 or more guests.</p>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); margin-top: 1rem;"><strong>Rental Includes:</strong></p>
+                            <ul style="list-style: none; margin-bottom: 1rem; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Tables and chairs to accommodate different size parties.</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--primary-sunset); margin-right: 0.5rem;">&#10004;</span> Catered Meals for groups of 30 or more.</li>
+                            </ul>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); margin-top: 0.5rem;"><strong>Additional Options:</strong></p>
+                            <ul style="list-style: none; margin-bottom: 1.5rem; padding-left: 0.5rem; display: flex; flex-direction: column; gap: 0.35rem;">
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--brass-gold); margin-right: 0.5rem;">&#9656;</span> Private Bartender available (minimum purchase necessary).</li>
+                                <li style="font-size: 0.9rem; color: var(--text-muted);"><span style="color: var(--brass-gold); margin-right: 0.5rem;">&#9656;</span> Non-Alcoholic beverages on ice, in the tent.</li>
+                            </ul>
+                        </div>
+                        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                            <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Rental Cost</span>
+                            <div style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--secondary-amber); font-weight: bold; margin: 1.5rem 0;">TBD</div>
+                            <p style="font-size: 0.95rem; color: var(--text-cream); font-weight: 500;">Based on Event Size & Day</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Full payment of tent rental is required to hold your spot.</p>
+                            <a href="#inquiry" class="btn btn-primary" style="margin-top: 1.5rem; font-size: 0.75rem;">Inquire Rates</a>
+                        </div>
+                    </div>
+                    <div class="flyer-card">
+                        <img src="assets/event-tent-party-setup.jpg" alt="Large Event Tent Party Tables Setup" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Large Event Tent</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY FORM -->
+    <section class="section section-dark" id="inquiry">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 4rem auto;">
+                <h2>Inquire About an Event</h2>
+                <p>Know your target date? Fill out the details below. Our events coordinator will check availability and follow up within 24 hours.</p>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="svgc-form" id="eventInquiryForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="eFirstName">First Name</label>
+                            <input type="text" id="eFirstName" class="form-control" placeholder="Tracy" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eLastName">Last Name</label>
+                            <input type="text" id="eLastName" class="form-control" placeholder="Stocker" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eEmail">Email Address</label>
+                            <input type="email" id="eEmail" class="form-control" placeholder="tracy@svgc.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ePhone">Phone Number</label>
+                            <input type="tel" id="ePhone" class="form-control" placeholder="(360) 568-2493" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eDate">Target Date of Party</label>
+                            <input type="date" id="eDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eGuests">Approximate Guest Count</label>
+                            <input type="number" id="eGuests" class="form-control" placeholder="25" min="1" required>
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="ePackage">Selected Package</label>
+                            <select id="ePackage" class="form-control" style="background-color: #070d0a;" required>
+                                <option value="" disabled selected>Select an Event Space</option>
+                                <option value="stall">Premium Stall Rental ($100/hr)</option>
+                                <option value="covered">Covered Patio Rental ($125/hr)</option>
+                                <option value="fire">Fire Table Patio Rental ($150/hr)</option>
+                                <option value="tent">Large Tent Rental (Custom Quote)</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="eMessage">Catering requests or special details</label>
+                            <textarea id="eMessage" class="form-control" placeholder="Let us know if you need catering details (for groups of 30+), private bartender setup, or special configurations..."></textarea>
+                        </div>
+                        <div class="form-full" style="text-align: center; margin-top: 1rem;">
+                            <button type="submit" class="btn btn-primary" style="width: 250px;">Submit Inquiry</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT PUTT ANIMATED SEPARATOR -->
+    <div class="putt-track-container">
+        <div class="putt-track">
+            <div class="putt-ball"></div>
+            <div class="putt-hole"></div>
+            <div class="putt-flag"></div>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img" style="height: 40px;">
+                    </a>
+                    <p>Family owned and operated, nestled in the Snohomish Valley. Providing high-end golf practice, championship mini golf, and scratch cooking since 2001.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="toptracer.html">Range Pricing</a></li>
+                        <li><a href="mini-golf.html">Mini Golf</a></li>
+                        <li><a href="grill.html">Valley Grill</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Reservations & Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="rentals.html">Party Rentals</a></li>
+                        <li><a href="pro-shop.html">PGA Instruction</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                        <li><a href="about.html">Our Family</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours & Info</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Golf Range:</strong> (360) 568-2493</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Instruction:</strong> (425) 327-7495</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Email:</strong> info@svgc.com</p>
+                    <p style="font-size: 0.9rem;"><strong>Open Every Day:</strong><br>8:00 AM–10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Snohomish Valley Golf Center. All rights reserved.</p>
+                <p>8511 Marsh Road, Snohomish, WA 98296</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

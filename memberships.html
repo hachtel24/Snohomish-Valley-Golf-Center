@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Snohomish Valley Golf Center family with our SVGC Membership. Enjoy massive discounts on large, medium, and small buckets of range balls, mini-golf admission, and exclusive member-only perks.">
+    <title>SVGC Memberships & Benefits | Snohomish Valley Golf Center</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .calculator-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 3rem;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        .calc-group {
+            margin-bottom: 2rem;
+        }
+        .calc-group label {
+            display: block;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--brass-gold);
+            margin-bottom: 0.75rem;
+        }
+        .calc-input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .calc-slider {
+            flex: 1;
+            accent-color: var(--secondary-amber);
+            background: rgba(7, 13, 10, 0.6);
+            height: 6px;
+            border-radius: 3px;
+            outline: none;
+        }
+        .calc-number {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--text-cream);
+            width: 40px;
+            text-align: right;
+            font-weight: bold;
+        }
+        .calc-results {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .calc-result-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .calc-result-val {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--secondary-amber);
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(255, 176, 58, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="toptracer.html">Range</a></li>
+                <li><a href="mini-golf.html">Mini Golf</a></li>
+                <li><a href="grill.html">Grill</a></li>
+                <li class="active"><a href="memberships.html">Memberships</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="pro-shop.html">Instruction</a></li>
+                <li><a href="gift-cards.html">Gift Cards</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- BENEFITS & PRICING SECTION -->
+    <section class="section section-dark" id="benefits" style="padding-top: calc(var(--header-height) + 5rem);">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 5rem auto;">
+                <h2>SVGC Club Memberships</h2>
+                <p>Designed for individuals and families who visit Snohomish Valley Golf Center regularly. Enjoy substantial savings, free rounds, and exclusive perks.</p>
+            </div>
+
+            <!-- Three Column Flyer Grid -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 5rem;">
+                <div class="flyer-card">
+                    <img src="assets/membership-individual-pricing.png" alt="SVGC Individual Membership Flyer" class="flyer-img" loading="lazy">
+                    <div style="text-align: center;">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Individual Membership</span>
+                    </div>
+                </div>
+                <div class="flyer-card">
+                    <img src="assets/membership-couple-pricing.png" alt="SVGC Couples Membership Flyer" class="flyer-img" loading="lazy">
+                    <div style="text-align: center;">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Couples Membership</span>
+                    </div>
+                </div>
+                <div class="flyer-card">
+                    <img src="assets/membership-family-pricing.png" alt="SVGC Family Membership Flyer" class="flyer-img" loading="lazy">
+                    <div style="text-align: center;">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Family Membership</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digitized Details and Tables -->
+            <div style="max-width: 900px; margin: 0 auto 5rem auto; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-cream); text-align: center;">Membership Rates</h3>
+                <p style="margin-bottom: 2.5rem; text-align: center;">All memberships are valid for <strong>one full year from the date of purchase</strong>. To qualify for renewal rates, you must already be a member at the time of renewal.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="padding: 1.5rem; background: rgba(7, 13, 10, 0.4); border: 1px solid var(--border-color); border-radius: 8px; text-align: center;">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 1rem;">Individual Tier</h4>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--secondary-amber); font-weight: bold; margin-bottom: 0.5rem;">$159 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">New</span></div>
+                        <div style="font-size: 1rem; color: var(--brass-gold); font-weight: 500;">$139 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">Renewal</span></div>
+                    </div>
+                    <div style="padding: 1.5rem; background: rgba(7, 13, 10, 0.4); border: 1px solid var(--border-color); border-radius: 8px; text-align: center;">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 1rem;">Couples Tier</h4>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--secondary-amber); font-weight: bold; margin-bottom: 0.5rem;">$229 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">New</span></div>
+                        <div style="font-size: 1rem; color: var(--brass-gold); font-weight: 500;">$209 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">Renewal</span></div>
+                    </div>
+                    <div style="padding: 1.5rem; background: rgba(7, 13, 10, 0.4); border: 1px solid var(--border-color); border-radius: 8px; text-align: center;">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 1rem;">Family Tier</h4>
+                        <div style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--secondary-amber); font-weight: bold; margin-bottom: 0.5rem;">$299 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">New</span></div>
+                        <div style="font-size: 1rem; color: var(--brass-gold); font-weight: 500;">$279 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: normal;">Renewal</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Perks List -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 3.5rem; margin-bottom: 5rem;">
+                <h3 style="text-align: center; margin-bottom: 3rem; font-family: var(--font-heading); color: var(--secondary-amber);">Comprehensive Member Perks</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem;">
+                    <div>
+                        <h4 style="font-family: var(--font-heading); color: var(--text-cream); margin-bottom: 1rem; border-bottom: 1px solid rgba(197, 160, 89, 0.15); padding-bottom: 0.5rem;">Immediate Value Items</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>3 Free Range Buckets</strong> (any size, loaded with Toptracer).
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>3 Free Mini-Golf Rounds</strong> on our 18-hole course.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>Free 15-Minute Lesson</strong> ($35 value) with Patrick Ackerman, PGA.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>Free Access</strong> to short game chip n' putt green area.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="font-family: var(--font-heading); color: var(--text-cream); margin-bottom: 1rem; border-bottom: 1px solid rgba(197, 160, 89, 0.15); padding-bottom: 0.5rem;">Everyday Discounts</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>$4 Off Every Bucket</strong> of range balls.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>$2 Off Mini Golf & Ice Skating</strong> sessions.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>$1 Off Alcoholic Beverages</strong> all day at Valley Grill.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>Member Pricing</strong> on party patio and fire table rentals.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="font-family: var(--font-heading); color: var(--text-cream); margin-bottom: 1rem; border-bottom: 1px solid rgba(197, 160, 89, 0.15); padding-bottom: 0.5rem;">Valley Grill Perks</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>Free Starter</strong> or a <strong>6-piece chicken wing</strong> plate with purchase.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> Scratch kitchen discounts on special seasonal menu additions.
+                            </li>
+                            <li style="font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+                                <span style="color: var(--primary-sunset);">&#10004;</span> <strong>Invitation</strong> to the exclusive member Christmas party!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CALCULATOR SECTION -->
+    <section class="section" id="calculator">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <h2>Calculate Your Club Savings</h2>
+                    <p>Find out exactly how much you can save with an SVGC membership. Adjust the sliders to reflect your estimated range practice and mini-golf visits.</p>
+                    <p>For most local golfers, hit just <strong>three large buckets a month</strong> and the membership easily pays for itself, unlocking pure savings on every swing thereafter.</p>
+                </div>
+                
+                <div class="calculator-card">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-cream);">Savings Tool</h3>
+                    
+                    <div class="calc-group">
+                        <label for="calcBuckets">Large Buckets Per Month</label>
+                        <div class="calc-input-wrapper">
+                            <input type="range" id="calcBuckets" class="calc-slider" min="0" max="20" value="4">
+                            <span id="bucketsVal" class="calc-number">4</span>
+                        </div>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="calcGolf">Mini Golf Rounds Per Month</label>
+                        <div class="calc-input-wrapper">
+                            <input type="range" id="calcGolf" class="calc-slider" min="0" max="10" value="2">
+                            <span id="golfVal" class="calc-number">2</span>
+                        </div>
+                    </div>
+
+                    <div class="calc-results">
+                        <div class="calc-result-title">Estimated Monthly Savings</div>
+                        <div id="calcSavingsVal" class="calc-result-val">$20.00</div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem; margin-bottom: 0;">Equivalent to $240.00 saved annually!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INQUIRY FORM -->
+    <section class="section section-dark" id="register">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 4rem auto;">
+                <h2>Inquire About Membership</h2>
+                <p>Ready to unlock your member rates? Fill out the brief form below, and our Pro Shop coordinator will send over registration details.</p>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="svgc-form" id="membershipForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="mFirstName">First Name</label>
+                            <input type="text" id="mFirstName" class="form-control" placeholder="Stubby" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mLastName">Last Name</label>
+                            <input type="text" id="mLastName" class="form-control" placeholder="Stocker" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mEmail">Email Address</label>
+                            <input type="email" id="mEmail" class="form-control" placeholder="stubby@svgc.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mPhone">Phone Number</label>
+                            <input type="tel" id="mPhone" class="form-control" placeholder="(360) 568-2493" required>
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="mComments">Questions or Special Requests</label>
+                            <textarea id="mComments" class="form-control" placeholder="Tell us if you are looking for family plans, junior rates, etc..."></textarea>
+                        </div>
+                        <div class="form-full" style="text-align: center; margin-top: 1rem;">
+                            <button type="submit" class="btn btn-primary" style="width: 250px;">Inquire Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT PUTT ANIMATED SEPARATOR -->
+    <div class="putt-track-container">
+        <div class="putt-track">
+            <div class="putt-ball"></div>
+            <div class="putt-hole"></div>
+            <div class="putt-flag"></div>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img" style="height: 40px;">
+                    </a>
+                    <p>Family owned and operated, nestled in the Snohomish Valley. Providing high-end golf practice, championship mini golf, and scratch cooking since 2001.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="toptracer.html">Range Pricing</a></li>
+                        <li><a href="mini-golf.html">Mini Golf</a></li>
+                        <li><a href="grill.html">Valley Grill</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Reservations & Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="rentals.html">Party Rentals</a></li>
+                        <li><a href="pro-shop.html">PGA Instruction</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                        <li><a href="about.html">Our Family</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours & Info</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Golf Range:</strong> (360) 568-2493</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Instruction:</strong> (425) 327-7495</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Email:</strong> info@svgc.com</p>
+                    <p style="font-size: 0.9rem;"><strong>Open Every Day:</strong><br>8:00 AM–10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Snohomish Valley Golf Center. All rights reserved.</p>
+                <p>8511 Marsh Road, Snohomish, WA 98296</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // --- MEMBERSHIP SAVINGS CALCULATOR CODE ---
+        const calcBuckets = document.getElementById('calcBuckets');
+        const calcGolf = document.getElementById('calcGolf');
+        const bucketsVal = document.getElementById('bucketsVal');
+        const golfVal = document.getElementById('golfVal');
+        const calcSavingsVal = document.getElementById('calcSavingsVal');
+
+        const updateSavings = () => {
+            const bucketsCount = parseInt(calcBuckets.value, 10);
+            const golfCount = parseInt(calcGolf.value, 10);
+            
+            // Bucket savings: $4.00 per bucket
+            // Mini Golf savings: $2.00 per round
+            const savings = (bucketsCount * 4) + (golfCount * 2);
+            
+            bucketsVal.textContent = bucketsCount;
+            golfVal.textContent = golfCount;
+            calcSavingsVal.textContent = `$${savings.toFixed(2)}`;
+        };
+
+        if (calcBuckets && calcGolf) {
+            calcBuckets.addEventListener('input', updateSavings);
+            calcGolf.addEventListener('input', updateSavings);
+            updateSavings(); // Run initially
+        }
+    </script>
+</body>
+</html>

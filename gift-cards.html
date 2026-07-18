@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View gift card options at Snohomish Valley Golf Center. Learn about SVGC and Patrick Ackerman Pro Shop gift card values, usage (balls, mini golf, food, beer, skate rink), and safety guidelines.">
+    <title>Gift Cards | Snohomish Valley Golf Center</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .warning-card {
+            background: rgba(255, 69, 0, 0.05);
+            border: 1px solid rgba(255, 69, 0, 0.4);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 3.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.1);
+        }
+        .warning-icon {
+            width: 48px;
+            height: 48px;
+            fill: var(--accent-fire);
+            flex-shrink: 0;
+        }
+        .warning-text h4 {
+            color: var(--text-cream);
+            margin-bottom: 0.25rem;
+            font-size: 1.1rem;
+        }
+        .warning-text p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+        .gift-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        .gift-product-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+        .gift-product-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-hover);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .card-visual {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(135deg, #16261f 0%, #070d0a 100%);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .card-visual::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 45%, rgba(197,160,89,0.1) 50%, transparent 55%);
+            animation: card-shimmer 8s linear infinite;
+        }
+        @keyframes card-shimmer {
+            0% { transform: translate(-30%, -30%); }
+            100% { transform: translate(30%, 30%); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="toptracer.html">Range</a></li>
+                <li><a href="mini-golf.html">Mini Golf</a></li>
+                <li><a href="grill.html">Grill</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="pro-shop.html">Instruction</a></li>
+                <li class="active"><a href="gift-cards.html">Gift Cards</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: linear-gradient(rgba(7, 13, 10, 0.5), rgba(7, 13, 10, 0.9)), url('assets/hero_sunset_range.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">SVGC Storefront</span>
+                <h1>Gift Cards</h1>
+                <p class="hero-desc">Give the gift of twilight swings, championship mini-golf rounds, and delicious scratch-cooked food. Available for purchase in-person at the SVGC counter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WARNING & PRODUCT SECTION -->
+    <section class="section section-dark">
+        <div class="container" style="max-width: 960px;">
+            
+            <!-- Safety Notice Warning Card -->
+            <div class="warning-card">
+                <svg class="warning-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+                <div class="warning-text">
+                    <h4>Important Safety Notice</h4>
+                    <p><strong>We do NOT sell digital gift cards, nor do we partner with any third-party websites.</strong> For your security, please do not purchase SVGC gift certificates online. Genuine physical cards can only be obtained directly at our Snohomish Valley facility front counter.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>Gift Card Categories</h2>
+                <p>Perfect for birthdays, holidays, or saying thank you to a fellow golfer. Cards never expire.</p>
+            </div>
+
+            <div class="gift-grid">
+                
+                <!-- Product 1: SVGC Gift Card -->
+                <div class="gift-product-card">
+                    <div class="card-visual">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); letter-spacing: 0.15em; font-size: 1.1rem; text-shadow: 0 0 8px rgba(197,160,89,0.4);">SVGC RANGE & GRILL</span>
+                    </div>
+                    <h3>SVGC Gift Cards</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Available in custom increments from <strong>$10 to $500</strong>. Can be redeemed for range buckets, mini-golf play, food, beer, cocktails, wine, and the SVGC skate rink.</p>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem; margin-bottom: 2rem;">
+                        <span style="font-size: 0.75rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--text-cream);">$10</span>
+                        <span style="font-size: 0.75rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--text-cream);">$25</span>
+                        <span style="font-size: 0.75rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--text-cream);">$50</span>
+                        <span style="font-size: 0.75rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--text-cream);">$100</span>
+                        <span style="font-size: 0.75rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--text-cream);">$250</span>
+                        <span style="font-size: 0.75rem; background: rgba(197, 160, 89, 0.1); border: 1px solid var(--border-color); padding: 0.25rem 0.5rem; border-radius: 4px; color: var(--text-cream);">$500</span>
+                    </div>
+                    <span class="btn btn-secondary" style="width: 100%; cursor: default; background: none; border-color: rgba(197,160,89,0.15); color: var(--text-muted);">Available In-Person Only</span>
+                </div>
+
+                <!-- Product 2: Pro Shop Gift Card -->
+                <div class="gift-product-card">
+                    <div class="card-visual" style="background: linear-gradient(135deg, #1f1f1a 0%, #070d0a 100%);">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); letter-spacing: 0.15em; font-size: 1.1rem; text-shadow: 0 0 8px rgba(197,160,89,0.4);">PATRICK'S PRO SHOP</span>
+                    </div>
+                    <h3>Pro Shop Gift Cards</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Valid exclusively for golf instruction, swing clinics, club fitting fees, re-gripping services, and PGA merchandise inside Patrick Ackerman's Pro Shop.</p>
+                    <div style="font-size: 0.85rem; font-style: italic; color: var(--text-muted); margin-bottom: 2.5rem;">Ask Pro Shop attendants for custom value certificates.</div>
+                    <span class="btn btn-secondary" style="width: 100%; cursor: default; background: none; border-color: rgba(197,160,89,0.15); color: var(--text-muted);">Available In-Person Only</span>
+                </div>
+
+                <!-- Product 3: Clinic Package -->
+                <div class="gift-product-card">
+                    <div class="card-visual" style="background: linear-gradient(135deg, #102a1b 0%, #070d0a 100%);">
+                        <span style="font-family: var(--font-heading); color: var(--secondary-amber); letter-spacing: 0.15em; font-size: 1.1rem; text-shadow: 0 0 8px rgba(255,176,58,0.4);">SWING CLINIC CLINIC</span>
+                    </div>
+                    <h3>1-Hour Swing Clinic</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Pre-purchase a one-hour swing diagnostic clinic with PGA Head Professional Patrick Ackerman. Focuses on full swing mechanics and launching analytics.</p>
+                    <div style="font-size: 0.85rem; font-style: italic; color: var(--text-muted); margin-bottom: 2.5rem;">Ask at the Pro Shop front desk for clinic packages and booking vouchers.</div>
+                    <span class="btn btn-secondary" style="width: 100%; cursor: default; background: none; border-color: rgba(197,160,89,0.15); color: var(--text-muted);">Available In-Person Only</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT PUTT ANIMATED SEPARATOR -->
+    <div class="putt-track-container">
+        <div class="putt-track">
+            <div class="putt-ball"></div>
+            <div class="putt-hole"></div>
+            <div class="putt-flag"></div>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img" style="height: 40px;">
+                    </a>
+                    <p>Family owned and operated, nestled in the Snohomish Valley. Providing high-end golf practice, championship mini golf, and scratch cooking since 2001.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="toptracer.html">Range Pricing</a></li>
+                        <li><a href="mini-golf.html">Mini Golf</a></li>
+                        <li><a href="grill.html">Valley Grill</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Reservations & Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="rentals.html">Party Rentals</a></li>
+                        <li><a href="pro-shop.html">PGA Instruction</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                        <li><a href="about.html">Our Family</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours & Info</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Golf Range:</strong> (360) 568-2493</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Instruction:</strong> (425) 327-7495</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Email:</strong> info@svgc.com</p>
+                    <p style="font-size: 0.9rem;"><strong>Open Every Day:</strong><br>8:00 AM–10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Snohomish Valley Golf Center. All rights reserved.</p>
+                <p>8511 Marsh Road, Snohomish, WA 98296</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

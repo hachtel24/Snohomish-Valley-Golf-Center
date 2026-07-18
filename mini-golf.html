@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play a round on our 18-hole championship mini-golf course at Snohomish Valley Golf Center. Enjoy twilight putting under the lights. Also check out our putting and chipping practice green rules.">
+    <title>Championship Mini Golf & Practice Green | Snohomish Valley Golf Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION HEADER -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="toptracer.html">Range</a></li>
+                <li class="active"><a href="mini-golf.html">Mini Golf</a></li>
+                <li><a href="grill.html">Grill</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="pro-shop.html">Instruction</a></li>
+                <li><a href="gift-cards.html">Gift Cards</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background: linear-gradient(rgba(7, 13, 10, 0.5), rgba(7, 13, 10, 0.9)), url('assets/minigolf-course-bridge.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">18-Hole Championship Layout</span>
+                <h1>Twilight Mini Golf</h1>
+                <p class="hero-desc">Experience one of the finest mini-golf designs in the state. Beautifully landscaped, fully illuminated in the evening, and open daily until 10:00 PM.</p>
+                <div class="btn-group">
+                    <a href="#rates" class="btn btn-primary">Pricing & Hours</a>
+                    <a href="#practice-green" class="btn btn-secondary">Practice Green Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RATES & HOURS -->
+    <section class="section section-dark" id="rates">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                <h2>Hours & Admission</h2>
+                <p>Open daily from <strong>8:00 AM to 10:00 PM</strong>. Last tee time is at <strong>9:00 PM</strong> to ensure players can complete the course.</p>
+            </div>
+
+            <!-- Dynamic Pricing Toggle Widget -->
+            <div class="price-toggle-container">
+                <span class="toggle-label" style="color: var(--text-muted);">Standard Price</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="priceToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" style="color: var(--secondary-amber);">Member Rate</span>
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto 3rem auto;">
+                <div class="price-card">
+                    <span class="price-item-name">Adult Admission</span>
+                    <span class="price-amount price-val" data-public="$12" data-member="$10">$12</span>
+                </div>
+                <div class="price-card">
+                    <span class="price-item-name">Senior Admission (Ages 55+)</span>
+                    <span class="price-amount price-val" data-public="$10" data-member="$8">$10</span>
+                </div>
+                <div class="price-card">
+                    <span class="price-item-name">Junior Admission (Ages 12 & Under)</span>
+                    <span class="price-amount price-val" data-public="$10" data-member="$8">$10</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 0.95rem; font-style: italic; color: var(--text-muted);">Priced per round. All balls and premium putters are provided with admission. Additional precautions are taken and safety rules are posted on-site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE COURSE DETAILS -->
+    <section class="section" id="course">
+        <div class="container">
+            <div class="grid-2-cols" style="align-items: center; margin-bottom: 2rem;">
+                <div class="flyer-card">
+                    <img src="assets/minigolf-course-bridge.jpg" alt="Snohomish Valley Golf Center Mini Golf Course Wooden Bridge" class="flyer-img" loading="lazy">
+                    <div style="text-align: center;">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Championship 18-Hole Course</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>Championship Putting Layout</h2>
+                    <p>Winding through beautifully landscaped rock-lined ponds, flowing streams, and rustic wooden bridges, our 18-hole course offers a premium putting test for players of all ages and skills.</p>
+                    <p>Designed to mirror natural course contours, it features real artificial turf greens, sand hazards, and elevation changes that require deliberate touch. Perfect for friendly tournaments, family outings, and twilight matches under the overhead string lights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PRACTICE GREEN SECTION (CONTENT GAP RESOLVED) -->
+    <section class="section section-dark" id="practice-green">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div style="display: flex; flex-direction: column; gap: 2rem;">
+                    <div>
+                        <h2>The Practice Putting Green</h2>
+                        <h3>Fine-Tune Your Touch</h3>
+                        <p>Improve your short game on our beautifully manicured, premium grass putting green. Perfect for pre-round warmups or dedicated putting drills.</p>
+                        
+                        <div style="background: rgba(197, 160, 89, 0.05); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem; margin-top: 1.5rem;">
+                            <h4 style="color: var(--brass-gold); margin-bottom: 0.75rem; font-family: var(--font-heading); font-size: 1.05rem;">Practice Green Etiquette & Rules</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                    <span style="color: var(--secondary-amber);">&#8226;</span> <strong>Admission:</strong> Free to use for range bucket purchasers and mini-golf players.
+                                </li>
+                                <li style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                    <span style="color: var(--secondary-amber);">&#8226;</span> <strong>Hours:</strong> Open daily from 8:00 AM to 10:00 PM.
+                                </li>
+                                <li style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                    <span style="color: var(--secondary-amber);">&#8226;</span> <strong>Putting vs Chipping:</strong> Chipping is strictly confined to the designated chipping bunker and green to protect the main putting turf.
+                                </li>
+                                <li style="margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 0.5rem;">
+                                    <span style="color: var(--secondary-amber);">&#8226;</span> <strong>Equipment:</strong> Please bring your own practice golf balls. Range balls are not allowed on the putting green.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                        <div style="max-width: 60%;">
+                            <h4 style="color: var(--text-cream); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem;">Need Help with Your Scoring?</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Patrick Ackerman, PGA Class-A Head Professional, offers short-game scoring clinics and lessons to help you save strokes around the green.</p>
+                        </div>
+                        <a href="pro-shop.html" class="btn btn-primary" style="font-size: 0.75rem; white-space: nowrap;">Book Lesson</a>
+                    </div>
+                </div>
+                
+                <div class="flyer-card">
+                    <img src="assets/practice-green.png" alt="SVGC Practice Putting and Chipping Green" class="flyer-img" loading="lazy">
+                    <div style="text-align: center;">
+                        <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Premium Grass Practice Green</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECT PUTT ANIMATED SEPARATOR -->
+    <div class="putt-track-container">
+        <div class="putt-track">
+            <div class="putt-ball"></div>
+            <div class="putt-hole"></div>
+            <div class="putt-flag"></div>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <img src="assets/svgc.svg" alt="Snohomish Valley Golf Center Logo" class="logo-img" style="height: 40px;">
+                    </a>
+                    <p>Family owned and operated, nestled in the Snohomish Valley. Providing high-end golf practice, championship mini golf, and scratch cooking since 2001.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="toptracer.html">Range Pricing</a></li>
+                        <li><a href="mini-golf.html">Mini Golf</a></li>
+                        <li><a href="grill.html">Valley Grill</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Reservations & Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="rentals.html">Party Rentals</a></li>
+                        <li><a href="pro-shop.html">PGA Instruction</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                        <li><a href="about.html">Our Family</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours & Info</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Golf Range:</strong> (360) 568-2493</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Instruction:</strong> (425) 327-7495</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Email:</strong> info@svgc.com</p>
+                    <p style="font-size: 0.9rem;"><strong>Open Every Day:</strong><br>8:00 AM–10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Snohomish Valley Golf Center. All rights reserved.</p>
+                <p>8511 Marsh Road, Snohomish, WA 98296</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
