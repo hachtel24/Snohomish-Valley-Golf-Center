@@ -128,62 +128,70 @@
                 
                 <!-- Tab 1: Breakfast -->
                 <div class="tab-content active" id="breakfast">
-                    <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; align-items: start;">
-                        <img src="assets/breakfast-menu.png" alt="Valley Grill Breakfast Menu Flyer" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid rgba(197,160,89,0.25);" loading="lazy">
-                        <div>
-                            <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Breakfast Offerings</h3>
-                            
-                            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
-                                <div>
-                                    <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Breakfast Sandwich <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
-                                    <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Two eggs, sausage, bacon, cheddar cheese, and house aioli on a toasted brioche bun. Served with hash browns.</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Breakfast Burrito <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
-                                    <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Bacon or chorizo, eggs, cheddar, hash browns, and fresh salsa wrapped in a flour tortilla. Add jalapeños (+$2.00) or chipotle aioli (+$0.50).</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Crispy French Toast <span style="float: right; color: var(--primary-sunset);">$10.00</span></h4>
-                                    <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Golden griddled French toast served with sweet raspberry sauce, butter, and maple syrup.</p>
-                                </div>
+                    <div class="flyer-card">
+                        <img src="assets/breakfast-menu.png" alt="Valley Grill Breakfast Menu Flyer" class="flyer-img" loading="lazy">
+                        <div style="text-align: center;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Breakfast Menu</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Breakfast Offerings</h3>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Breakfast Sandwich <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Two eggs, sausage, bacon, cheddar cheese, and house aioli on a toasted brioche bun. Served with hash browns.</p>
                             </div>
-
-                            <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Breakfast Sides</h4>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem;">
-                                <div>
-                                    <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Bacon (2pc) <span style="float: right; color: var(--primary-sunset);">$3.00</span></h5>
-                                </div>
-                                <div>
-                                    <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Crispy Hash Browns (5pc) <span style="float: right; color: var(--primary-sunset);">$5.00</span></h5>
-                                </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Breakfast Burrito <span style="float: right; color: var(--primary-sunset);">$14.00</span></h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Bacon or chorizo, eggs, cheddar, hash browns, and fresh salsa wrapped in a flour tortilla. Add jalapeños (+$2.00) or chipotle aioli (+$0.50).</p>
                             </div>
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-cream); margin-bottom: 0.25rem;">Crispy French Toast <span style="float: right; color: var(--primary-sunset);">$10.00</span></h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-muted);">Golden griddled French toast served with sweet raspberry sauce, butter, and maple syrup.</p>
+                            </div>
+                        </div>
 
-                            <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Drink Specials</h4>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                                <div>
-                                    <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Bloody Mary <span style="float: right; color: var(--primary-sunset);">$10.00</span></h5>
-                                </div>
-                                <div>
-                                    <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Mimosa <span style="float: right; color: var(--primary-sunset);">$8.00</span></h5>
-                                </div>
-                                <div>
-                                    <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Screwdriver <span style="float: right; color: var(--primary-sunset);">$8.00</span></h5>
-                                </div>
+                        <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Breakfast Sides</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem;">
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Bacon (2pc) <span style="float: right; color: var(--primary-sunset);">$3.00</span></h5>
+                            </div>
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Crispy Hash Browns (5pc) <span style="float: right; color: var(--primary-sunset);">$5.00</span></h5>
+                            </div>
+                        </div>
+
+                        <h4 style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 1.05rem; border-bottom: 1px dashed rgba(197,160,89,0.15); padding-bottom: 0.25rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Drink Specials</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Bloody Mary <span style="float: right; color: var(--primary-sunset);">$10.00</span></h5>
+                            </div>
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Mimosa <span style="float: right; color: var(--primary-sunset);">$8.00</span></h5>
+                            </div>
+                            <div>
+                                <h5 style="font-family: var(--font-heading); font-size: 1rem; color: var(--text-cream); margin: 0 0 0.25rem 0;">Screwdriver <span style="float: right; color: var(--primary-sunset);">$8.00</span></h5>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Tab 2: Lunch & Dinner -->
                 <div class="tab-content" id="lunch-dinner">
-                    <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; align-items: start;">
-                        <img src="assets/restaurant-menu-full-pricing.png" alt="Valley Grill Lunch &amp; Dinner Menu Flyer" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid rgba(197,160,89,0.25);" loading="lazy">
-                        <div>
-                            <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Starters &amp; Specialties</h3>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; margin-bottom: 4rem;">
-                                <div>
-                                    <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">House Cut Fries <span style="float: right; color: var(--primary-sunset);">$9.00</span></h4>
-                                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Crispy, fresh hand-cut valley potatoes.</p>
-
+                    <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); background: var(--bg-card);">
+                        <img src="assets/restaurant-menu-full-pricing.png" alt="Valley Grill Lunch &amp; Dinner Menu Flyer" style="width: 100%; height: auto; display: block;" loading="lazy">
+                        <div style="text-align: center; padding: 1rem;">
+                            <span style="font-family: var(--font-heading); color: var(--brass-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em;">Lunch &amp; Dinner Menu</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.8rem; color: var(--secondary-amber); margin-bottom: 1.5rem; text-transform: uppercase;">Starters & Specialties</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; margin-bottom: 4rem;">
+                            <div>
+                                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">House Cut Fries <span style="float: right; color: var(--primary-sunset);">$9.00</span></h4>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Crispy, fresh hand-cut valley potatoes.</p>
                             </div>
                             <div>
                                 <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-cream); margin-bottom: 0.25rem;">Onion Rings <span style="float: right; color: var(--primary-sunset);">$12.00</span></h4>
